@@ -1,0 +1,81 @@
+* Fall 2020 - Lab 09
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+
+  
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+- The main lab description can be found here:
+  https://maryash.github.io/135/labs/lab_09.html 
+
+
+* Specific instructions and requirementsfor lab 09 
+
+This and future labs will start with a mostly empty repository. 
+
+You must:
+
+1. Use ~doctest.h~ based tests to test your solutions unless a
+   specific task says otherwise.
+2. Have a ~Makefile~ with at least the following targets: 
+   1. ~main~ to build *main* which will run your project
+   2. ~tests~ to build *tests* which will run the doctest based tests
+   3. ~clean~ which will remove *.o* files
+3. At least three  ~.cpp~ files - ~main.cpp~, ~tests.cpp~ and at least
+   one more with solutions to the labs. You will also need the
+   appropriate ~.h~ files.
+
+* Classes in C++
+
+In C++ classes are usually written in two parts - the specification
+which includes data declarations (and as you'll see in the next lab,
+function specifications) and the implementation which includes the
+actual code for the methods.
+
+With one exception which we'll see later, a class's specification is
+placed in a ~.h~ file which is then included. So, for this lab, you
+syould have a file named ~coord3d.h~ which contains: 
+
+#+begin_src c++
+#pragma once
+class Coord3D {
+public:
+    double x;
+    double y;
+    double z;
+};
+#+end_src
+
+and you should include it in any ~.cpp~ file that creates instances of
+Coord3D. You will also have to include it in any ~.h~ file that
+specifies functions that have a parameter of type ~Coord3D~.
+
+
+* Task specific instructions
+** Tasks A - C, and E
+
+Write the functions in one or more ~.cpp~ and ~.h~ files that
+implement the specified functionality. Call them from main and
+implement sufficient tests via doctest. 
+
+** Task D
+
+For this task, write a separate ~.cpp~ file as specified in the main
+lab.
+
+** Task F 
+
+This task is optional but if you complete it, add it to the same
+program as tasks A-C,E by creating a file ~Particle.h~ that specifies
+the Particle class. Implement the functions as you see fit.
+
+
+
