@@ -19,7 +19,7 @@ Coord3D * fartherFromOrigin(Coord3D *p1, Coord3D *p2) {
     and returns the pointer of the point that is farther away from the origin.
     */
 
-   if (length(p1) > length(p2)) {
+   if (length(p1) >= length(p2)) {
        return p1;
    } else {
        return p2;
